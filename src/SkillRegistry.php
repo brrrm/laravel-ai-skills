@@ -23,7 +23,21 @@ class SkillRegistry
 
     protected bool $strict = false;
 
+    protected bool $autoFlush = false;
+
     public function __construct(protected SkillLoader $loader) {}
+
+    /**
+     * When enabled, every all() call re-scans the filesystem. Use in dev to
+     * pick up new/edited SKILL.md files without restarting long-running
+     * processes (Octane, queue workers). Keep off in production.
+     */
+    public function autoFlush(bool $enabled = true): self
+    {
+        $this->autoFlush = $enabled;
+
+        return $this;
+    }
 
     /**
      * Register a directory to scan for skills.
@@ -73,6 +87,10 @@ class SkillRegistry
      */
     public function all(): Collection
     {
+        if ($this->autoFlush) {
+            $this->skills = null;
+        }
+
         return $this->skills ??= $this->discover();
     }
 

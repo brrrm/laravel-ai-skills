@@ -4,6 +4,7 @@ namespace CalqDev\AiSkills;
 
 use CalqDev\AiSkills\Console\ListSkillsCommand;
 use CalqDev\AiSkills\Console\MakeSkillCommand;
+use CalqDev\AiSkills\Console\PushSkillCommand;
 use CalqDev\AiSkills\Console\ValidateSkillCommand;
 use Illuminate\Support\ServiceProvider;
 
@@ -19,6 +20,7 @@ class AiSkillsServiceProvider extends ServiceProvider
             $registry = new SkillRegistry($app->make(SkillLoader::class));
 
             $registry->strict((bool) $app['config']->get('ai-skills.strict', false));
+            $registry->autoFlush((bool) $app['config']->get('ai-skills.auto_flush', false));
             $registry->paths($app['config']->get('ai-skills.paths', []));
 
             return $registry;
@@ -40,6 +42,7 @@ class AiSkillsServiceProvider extends ServiceProvider
                 ListSkillsCommand::class,
                 ValidateSkillCommand::class,
                 MakeSkillCommand::class,
+                PushSkillCommand::class,
             ]);
         }
     }

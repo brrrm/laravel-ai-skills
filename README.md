@@ -151,6 +151,51 @@ Register additional paths programmatically from another package's `ServiceProvid
 | `ai:skill:list` | List all discovered skills with their paths |
 | `ai:skill:validate` | Validate every SKILL.md against the spec |
 | `ai:skill:make {name}` | Scaffold a new SKILL.md from the stub |
+| `ai:skill:push {name}` | Upload a skill as a custom skill to Anthropic |
+
+## Pushing skills to Anthropic
+
+Skills can be uploaded to Anthropic as custom container skills, then referenced
+in Messages API requests via `container.skills[].skill_id`.
+
+```bash
+ANTHROPIC_API_KEY=sk-... php artisan ai:skill:push pdf-extractor \
+    --title="PDF Extractor"
+```
+
+The command bundles every file under the skill directory (subject to Anthropic's
+30 MB limit) and returns the generated `skill_id` plus version timestamp.
+
+## MCP bridge (optional)
+
+If your app uses [`laravel/mcp`](https://github.com/laravel/mcp), you can expose
+skills as MCP resources so external clients (Claude Code, Cursor, etc.) can
+discover and read them:
+
+```php
+// app/Mcp/Servers/YourServer.php
+use CalqDev\AiSkills\Mcp\SkillBodyResource;
+use CalqDev\AiSkills\Mcp\SkillCatalogResource;
+use Laravel\Mcp\Server;
+
+class YourServer extends Server
+{
+    protected array $resources = [
+        SkillCatalogResource::class,
+        SkillBodyResource::class,
+    ];
+}
+```
+
+- `skills://catalog` — markdown list of every registered skill
+- `skills://skill/{name}` — full SKILL.md body of a single skill
+
+## Dev hot-reload
+
+By default, the registry re-scans the filesystem on every `all()` call when the
+app is **not** in production. This means edits to SKILL.md files are picked up
+immediately under Octane, queue workers, and other long-running processes
+without a restart. Override via the `AI_SKILLS_AUTO_FLUSH` env var.
 
 ## SKILL.md format
 

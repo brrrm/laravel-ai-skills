@@ -36,6 +36,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Auto-flush (dev hot-reload)
+    |--------------------------------------------------------------------------
+    |
+    | When true, the registry re-scans the filesystem on every all() call so
+    | that edits to SKILL.md files are picked up without restarting Octane,
+    | queue workers, or long-running processes. Defaults to enabled outside
+    | of production.
+    |
+    */
+
+    'auto_flush' => env('AI_SKILLS_AUTO_FLUSH', ! app()->isProduction()),
+
+    /*
+    |--------------------------------------------------------------------------
     | Anthropic Native Container Skills
     |--------------------------------------------------------------------------
     |
