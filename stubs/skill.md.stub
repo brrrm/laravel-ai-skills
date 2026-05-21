@@ -1,0 +1,14 @@
+---
+name: {{ name }}
+description: {{ description }}
+---
+
+# {{ title }}
+
+## Instructions
+
+Describe step-by-step what the agent should do when this skill is loaded.
+
+## Examples
+
+Provide one or two concrete input/output examples.
