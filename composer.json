@@ -36,21 +36,21 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "CalqDev\\AiSkills\\": "src/"
+            "brrrm\\AiSkills\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CalqDev\\AiSkills\\Tests\\": "tests/"
+            "brrrm\\AiSkills\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "CalqDev\\AiSkills\\AiSkillsServiceProvider"
+                "brrrm\\AiSkills\\AiSkillsServiceProvider"
             ],
             "aliases": {
-                "Skills": "CalqDev\\AiSkills\\Facades\\Skills"
+                "Skills": "brrrm\\AiSkills\\Facades\\Skills"
             }
         }
     },
