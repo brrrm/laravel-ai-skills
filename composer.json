@@ -1,5 +1,5 @@
 {
-    "name": "calq-dev/laravel-ai-skills",
+    "name": "brrrm/laravel-ai-skills",
     "description": "Agent Skills support for the Laravel AI SDK — vendor-agnostic SKILL.md loader with optional Anthropic native container.skills[] integration.",
     "license": "MIT",
     "keywords": [
