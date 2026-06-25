@@ -1,6 +1,6 @@
 <?php
 
-namespace CalqDev\AiSkills\Anthropic;
+namespace brrrm\AiSkills\Anthropic;
 
 /**
  * Static helpers and constants for Anthropic's native Skills API.

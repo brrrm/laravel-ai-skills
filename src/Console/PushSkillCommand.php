@@ -1,9 +1,9 @@
 <?php
 
-namespace CalqDev\AiSkills\Console;
+namespace brrrm\AiSkills\Console;
 
-use CalqDev\AiSkills\Anthropic\SkillUploader;
-use CalqDev\AiSkills\SkillRegistry;
+use brrrm\AiSkills\Anthropic\SkillUploader;
+use brrrm\AiSkills\SkillRegistry;
 use Illuminate\Console\Command;
 
 class PushSkillCommand extends Command

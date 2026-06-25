@@ -1,6 +1,6 @@
 <?php
 
-namespace CalqDev\AiSkills\Anthropic;
+namespace brrrm\AiSkills\Anthropic;
 
 /**
  * Marker trait + helper for agents that want to attach skills via Anthropic's

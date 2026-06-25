@@ -1,11 +1,11 @@
 <?php
 
-namespace CalqDev\AiSkills;
+namespace brrrm\AiSkills;
 
-use CalqDev\AiSkills\Console\ListSkillsCommand;
-use CalqDev\AiSkills\Console\MakeSkillCommand;
-use CalqDev\AiSkills\Console\PushSkillCommand;
-use CalqDev\AiSkills\Console\ValidateSkillCommand;
+use brrrm\AiSkills\Console\ListSkillsCommand;
+use brrrm\AiSkills\Console\MakeSkillCommand;
+use brrrm\AiSkills\Console\PushSkillCommand;
+use brrrm\AiSkills\Console\ValidateSkillCommand;
 use Illuminate\Support\ServiceProvider;
 
 class AiSkillsServiceProvider extends ServiceProvider

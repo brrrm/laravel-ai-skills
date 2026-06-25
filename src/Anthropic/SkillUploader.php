@@ -1,9 +1,9 @@
 <?php
 
-namespace CalqDev\AiSkills\Anthropic;
+namespace brrrm\AiSkills\Anthropic;
 
-use CalqDev\AiSkills\Exceptions\InvalidSkillException;
-use CalqDev\AiSkills\Skill;
+use brrrm\AiSkills\Exceptions\InvalidSkillException;
+use brrrm\AiSkills\Skill;
 use Illuminate\Http\Client\Factory as HttpFactory;
 use Illuminate\Http\Client\Response;
 

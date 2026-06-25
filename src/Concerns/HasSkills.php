@@ -1,10 +1,10 @@
 <?php
 
-namespace CalqDev\AiSkills\Concerns;
+namespace brrrm\AiSkills\Concerns;
 
-use CalqDev\AiSkills\Skill;
-use CalqDev\AiSkills\SkillRegistry;
-use CalqDev\AiSkills\Tools\LoadSkillTool;
+use brrrm\AiSkills\Skill;
+use brrrm\AiSkills\SkillRegistry;
+use brrrm\AiSkills\Tools\LoadSkillTool;
 use Illuminate\Support\Collection;
 
 /**

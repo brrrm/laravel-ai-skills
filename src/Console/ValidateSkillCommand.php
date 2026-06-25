@@ -1,11 +1,11 @@
 <?php
 
-namespace CalqDev\AiSkills\Console;
+namespace brrrm\AiSkills\Console;
 
-use CalqDev\AiSkills\Exceptions\InvalidSkillException;
-use CalqDev\AiSkills\Skill;
-use CalqDev\AiSkills\SkillLoader;
-use CalqDev\AiSkills\SkillRegistry;
+use brrrm\AiSkills\Exceptions\InvalidSkillException;
+use brrrm\AiSkills\Skill;
+use brrrm\AiSkills\SkillLoader;
+use brrrm\AiSkills\SkillRegistry;
 use Illuminate\Console\Command;
 
 class ValidateSkillCommand extends Command

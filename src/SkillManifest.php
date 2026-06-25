@@ -1,8 +1,8 @@
 <?php
 
-namespace CalqDev\AiSkills;
+namespace brrrm\AiSkills;
 
-use CalqDev\AiSkills\Exceptions\InvalidSkillException;
+use brrrm\AiSkills\Exceptions\InvalidSkillException;
 use Symfony\Component\Yaml\Yaml;
 
 /**

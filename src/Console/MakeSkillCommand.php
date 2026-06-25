@@ -1,8 +1,8 @@
 <?php
 
-namespace CalqDev\AiSkills\Console;
+namespace brrrm\AiSkills\Console;
 
-use CalqDev\AiSkills\SkillManifest;
+use brrrm\AiSkills\SkillManifest;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 

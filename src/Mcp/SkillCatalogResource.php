@@ -1,9 +1,9 @@
 <?php
 
-namespace CalqDev\AiSkills\Mcp;
+namespace brrrm\AiSkills\Mcp;
 
-use CalqDev\AiSkills\Skill;
-use CalqDev\AiSkills\SkillRegistry;
+use brrrm\AiSkills\Skill;
+use brrrm\AiSkills\SkillRegistry;
 use Laravel\Mcp\Request;
 use Laravel\Mcp\Response;
 use Laravel\Mcp\Server\Attributes\Description;

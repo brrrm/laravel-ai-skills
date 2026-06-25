@@ -1,6 +1,6 @@
 <?php
 
-namespace CalqDev\AiSkills;
+namespace brrrm\AiSkills;
 
 /**
  * Walks registered directories and yields the SKILL.md paths of valid skill

@@ -1,9 +1,9 @@
 <?php
 
-namespace CalqDev\AiSkills;
+namespace brrrm\AiSkills;
 
-use CalqDev\AiSkills\Exceptions\InvalidSkillException;
-use CalqDev\AiSkills\Exceptions\SkillNotFoundException;
+use brrrm\AiSkills\Exceptions\InvalidSkillException;
+use brrrm\AiSkills\Exceptions\SkillNotFoundException;
 use Illuminate\Support\Collection;
 
 /**

@@ -36,21 +36,21 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "brrrm\\laravel-ai-skills\\": "src/"
+            "brrrm\\AiSkills\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "brrrm\\laravel-ai-skills\\Tests\\": "tests/"
+            "brrrm\\AiSkills\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "brrrm\\laravel-ai-skills\\AiSkillsServiceProvider"
+                "brrrm\\AiSkills\\AiSkillsServiceProvider"
             ],
             "aliases": {
-                "Skills": "brrrm\\laravel-ai-skills\\Facades\\Skills"
+                "Skills": "brrrm\\AiSkills\\Facades\\Skills"
             }
         }
     },

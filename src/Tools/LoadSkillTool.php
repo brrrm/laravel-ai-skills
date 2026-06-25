@@ -1,9 +1,9 @@
 <?php
 
-namespace CalqDev\AiSkills\Tools;
+namespace brrrm\AiSkills\Tools;
 
-use CalqDev\AiSkills\Exceptions\SkillNotFoundException;
-use CalqDev\AiSkills\SkillRegistry;
+use brrrm\AiSkills\Exceptions\SkillNotFoundException;
+use brrrm\AiSkills\SkillRegistry;
 use Illuminate\Contracts\JsonSchema\JsonSchema;
 use Laravel\Ai\Contracts\Tool;
 use Laravel\Ai\Tools\Request;

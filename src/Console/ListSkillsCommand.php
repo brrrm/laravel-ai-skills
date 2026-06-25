@@ -1,8 +1,8 @@
 <?php
 
-namespace CalqDev\AiSkills\Console;
+namespace brrrm\AiSkills\Console;
 
-use CalqDev\AiSkills\SkillRegistry;
+use brrrm\AiSkills\SkillRegistry;
 use Illuminate\Console\Command;
 
 class ListSkillsCommand extends Command

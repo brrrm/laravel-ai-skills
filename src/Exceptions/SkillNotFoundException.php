@@ -1,6 +1,6 @@
 <?php
 
-namespace CalqDev\AiSkills\Exceptions;
+namespace brrrm\AiSkills\Exceptions;
 
 use RuntimeException;
 
